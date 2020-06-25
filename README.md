@@ -1,3 +1,7 @@
+[![CircleCI](https://circleci.com/gh/jjpaters/the-barbs-web/tree/master.svg?style=svg)](https://circleci.com/gh/jjpaters/the-barbs-web/tree/master)
+[![Coverage Status](https://coveralls.io/repos/github/jjpaters/the-barbs-web/badge.svg?branch=circleci-pipeline)](https://coveralls.io/github/jjpaters/the-barbs-web?branch=circleci-pipeline)
+[![DeepScan grade](https://deepscan.io/api/teams/3232/projects/12605/branches/195504/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=3232&pid=12605&bid=195504)
+
 # The Barbs Web
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
