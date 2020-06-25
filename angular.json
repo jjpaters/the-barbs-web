@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "the-barbs-web"
+    }
+  },
+  "defaultProject": "the-barbs-web",
+  "cli": {
+    "analytics": false
+  }
 }
