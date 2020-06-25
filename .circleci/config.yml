@@ -26,7 +26,7 @@ workflows:
             - lint
             - unit_tests
       - deploy:
-        context: AWS
+          context: AWS
           requires:
             - build
           filters:
