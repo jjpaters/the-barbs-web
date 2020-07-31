@@ -25,14 +25,6 @@ workflows:
             - e2e_tests
             - lint
             - unit_tests
-      - deploy:
-          context: AWS
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - master
 
 #############################################################
 # Define jobs
@@ -100,17 +92,3 @@ jobs:
           root: .
           paths:
             - dist
-
-  deploy:
-    docker:
-      - image: buildpack-deps:trusty
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run: ls
-      - run: dir
-      - aws-s3/sync:
-          from: ./dist/the-barbs-web
-          to: 's3://thebarbs.org/'
-          overwrite: true
